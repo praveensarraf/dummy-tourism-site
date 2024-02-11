@@ -1,0 +1,294 @@
+body ul{
+    list-style: none;
+}
+
+body a, a:hover{
+    text-decoration: none;
+}
+
+/* top-menu */
+
+header{
+    animation-name: header-bg;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    transition: all;
+}
+
+header .top-nav{
+    background-image: linear-gradient(rgb(19, 62, 191), transparent);
+    position: fixed;
+    top: -1rem;
+    padding-top: 25px;
+    z-index: 1;
+}
+
+#logo img{
+ width: 120px;
+ border: 2px solid gold;
+ border-radius: 5px;
+}
+
+#logo img:hover{
+    border: 2px solid #e74c3c;
+}
+
+#top-menu{
+    margin: 0;
+    padding: 0;
+}
+
+#top-menu a{
+    color: white;
+}
+
+#top-menu li a:hover{
+    color: #e74c3c;
+}
+
+.register a{
+    color: #e74c3c;
+}
+
+.register a:hover{
+    color: #c0392b;
+}
+
+.top-section-container{
+    margin-top: 150px;
+}
+
+/* top-section */
+
+header .header-form-top{
+    width: 100%;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    font-weight: bold;
+    padding-top: 10px;
+    border-radius: 10px 10px 0 0;
+}
+
+header .header-form-section{
+    width: 100%;
+    background: rgba(231, 76, 60, 0.7);
+    border-radius: 0 0 10px 10px;
+}
+
+header .header-form input{
+    border: none;
+    background: transparent;
+    height: 40px;
+}
+
+header .header-form input::placeholder{
+    color: rgba(211, 211, 211, 0.9);
+}
+
+/* Destination-part */
+
+.heading-line{
+    width: 30%;
+    height: 1px;
+    background-color: gray;
+}
+
+.destination-button-top{
+    position: absolute;
+    left: 42%;
+    bottom: 40%;
+
+}.destination-button{
+    position: absolute;
+    left: 40%;
+    bottom: 25%;
+}
+
+.dstn-btn-text{
+ font-weight: bold;
+ font-size: 30px;
+ color: white;
+ text-align: center;
+ margin-bottom: 0;
+}
+
+/* special-offers */
+
+.offers{
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.offers img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.offer-img-text{
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 5px 0;
+    width: 89.5%;
+    position: absolute;
+    bottom: -3.1%;
+    border-radius: 0 0 5px 5px;
+}
+
+.subscribe-input{
+    width: 100%;
+    height: 38px;
+    border-radius: 5px 0 0 5px;
+    margin-right: 5px;
+}
+
+.subscribe{
+    width: 70%;
+    background-color: #e74c3c;
+    color: white;
+    text-align: center;
+    position: absolute;
+    bottom: 0%;
+    border-radius: 0 5px 5px 0;
+}
+
+.subscribe:hover{
+    background-color: #c0392b;
+}
+
+/* footer-top */
+
+#bottom-menu li a{
+    color: white;
+}
+
+#bottom-menu li a:hover{
+    color: black;
+}
+
+footer #socials a{
+    color: white;
+}
+
+footer #socials a:hover{
+    color: black;
+}
+
+.copyright a{
+    color: white;
+}
+
+.copyright a:hover{
+    color: black;
+}
+
+/* -------------------------------------------------------------------------- */
+
+/* header-background animation */
+@keyframes header-bg{
+    0%{
+        background: url(https://images.wallpaperscraft.com/image/single/mountains_snow_winter_84608_1280x720.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    25%{
+        background: url(https://images.wallpaperscraft.com/image/single/beach_palm_ocean_127914_1280x720.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    50%{
+        background: url(https://images.wallpaperscraft.com/image/single/mountain_panorama_cloud_111416_1280x720.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    75%{
+        background: url(https://images.wallpaperscraft.com/image/single/beach_sea_rocks_201122_1280x720.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    100%{
+        background: url(https://images.wallpaperscraft.com/image/single/mountain_lake_landscape_86124_1280x720.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+/* --------------------------------------------------------------------------------- */
+
+/* Media-query */
+
+@media (max-width:1200px){
+    .offer-img-text{
+        width: 87.5%;
+        bottom: -3.7%;
+    }
+}
+
+@media (max-width:992px){
+    .uae{
+        left: 35%;
+
+    }.destination-button{
+        left: 34%;
+        bottom: 15%;
+    }
+
+    .dstn-btn-text{
+        font-size: larger;
+    }
+
+    .offer-img-text{
+        width: 83%;
+        bottom: -5.5%;
+        font-size: medium;
+    }
+
+    /* .subscribe{
+        right: -5%;
+        bottom: 0.1%;
+    } */
+}
+
+@media (max-width:768px){
+    header .top-nav{
+        position: relative;
+    }
+
+    .top-section-container{
+        margin-top: 0;
+    }
+    .uae{
+        left: 42%;
+    }
+    .destination-button{
+        left: 42%;
+        bottom: 30%;
+    }
+
+    .dstn-box{
+        margin-bottom: 10px;
+    }
+
+    .dstn-btn-text{
+        font-size: 25px;
+    }
+
+    .offer-img-text{
+        width: 88.9%;
+        bottom: -3.6%;
+        font-size: medium;
+    }
+}
+
+@media (max-width:576px){
+    .offer-img-text{
+        background: transparent;
+        bottom: 2%;
+        text-align: center;
+        font-size: 25px;
+    }
+}
